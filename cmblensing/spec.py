@@ -6,7 +6,7 @@ class camb_clfile(object):
     # loader for standard CAMB _scalCls and _lensedCls.dat files.
     def __init__(self, tfname, lmax=None):
         tarray = np.loadtxt(tfname)
-        lmin   = tarray[0, 0]
+        lmin   = int(tarray[0, 0])
         assert(lmin in [1,2])
 
         if lmax == None:
