@@ -2,8 +2,8 @@ import os
 import numpy as np
 import ctypes as ct
 
-import spec
-import wignerd
+from . import spec
+from . import wignerd
 
 class gauss_legendre_quadrature:
     # Gauss-Legendre and Wigner-d matrix
